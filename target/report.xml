@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="148.06354">
+    <testcase classname="Affiliate Page" name="Admin edit the user details" time="148.06354">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+When Admin clicks the edit button"Hukomuko".................................passed
+And Admin visits the Edit Affiliate page....................................passed
+Then Admin changed the firstname"Ananya"....................................passed
+And Admin clicks the save button............................................passed
+Then Admin gets the success message.........................................passed
+And Admin checks the two values"Ananya".....................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
+
+

@@ -1,0 +1,215 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11956920400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6516331800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2079744000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14502600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5289418400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3399257400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 44091800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-13T04:53:36.394Z",
+        "line": 132,
+        "name": "Admin edit the user details",
+        "description": "",
+        "id": "affiliate-page;admin-edit-the-user-details;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 797508700,
+              "status": "passed"
+            },
+            "line": 123,
+            "name": "Admin clicks the edit button\"Hukomuko\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hukomuko\"",
+                  "offset": 28
+                }
+              ],
+              "location": "TestDefination.admin_clicks_the_edit_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48811700,
+              "status": "passed"
+            },
+            "line": 124,
+            "name": "Admin visits the Edit Affiliate page",
+            "match": {
+              "location": "TestDefination.admin_visits_the_Edit_Affiliate_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 281924700,
+              "status": "passed"
+            },
+            "line": 125,
+            "name": "Admin changed the firstname\"Ananya\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ananya\"",
+                  "offset": 27
+                }
+              ],
+              "location": "TestDefination.admin_changed_the_firstname(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 22788000,
+              "status": "passed"
+            },
+            "line": 126,
+            "name": "Admin clicks the save button",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50021900,
+              "status": "passed"
+            },
+            "line": 127,
+            "name": "Admin gets the success message",
+            "match": {
+              "location": "TestDefination.admin_gets_the_success_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 117556145800,
+              "status": "passed"
+            },
+            "line": 128,
+            "name": "Admin checks the two values\"Ananya\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ananya\"",
+                  "offset": 27
+                }
+              ],
+              "location": "TestDefination.admin_checks_the_two_values(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@edit"
+          }
+        ]
+      }
+    ],
+    "name": "Affiliate Page",
+    "description": "",
+    "id": "affiliate-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/RetailFeature/Retail.feature",
+    "tags": []
+  }
+]]
+]": []
+  }
+]
