@@ -30,10 +30,11 @@ Feature: Affiliate Page
     And Admin verifies the success message
 
     Examples: 
-      | firstname | lastname | email | telephone | fax | password | confirmpassword | status | company | website | address1 | address2 | city | postcode | country | state | commission | taxid | option | chequename | paypalmail | bank | branchnumber | swift | accname | accnum |
+      | firstname  | lastname | email             | telephone  | fax          | password  | confirmpassword | status   | company   | website  | address1 | address2 | city        | postcode | country | state       | commission | taxid | option | chequename | paypalmail       | bank | branchnumber | swift | accname | accnum |
+      | RamGorurer | Chana    | hasbona@yagoo.com | 7965482310 | 025896314789 | ananya123 | ananya123       | Disabled | Capgemini | capg.com | Bandra   | Mumbai   | Mumbai City |   852697 | India   | West Bengal |         10 |  1234 | paypal |            | chadvfgv@tyu.com |      |              |       |         |        |
+      | Shsja1234  | df356    | 123456@gmail.com  | 1123456789 |      2345678 | anan      | anan            | Enabled  | Capgemini | capg.com | Bandra   | Mumbai   | Mumbai City |     3456 | India   | West Bengal |          7 |  1234 | paypal |            | chadvfgv@tyu.com |      |              |       |         |        |
+      
 
-  #| RamGorurer | Chana    | hasbona@yagoo.com | 7965482310 | 025896314789 | ananya123 | ananya123       | Disabled | Capgemini | capg.com | Bandra   | Mumbai   | Mumbai City |   852697 | India   | West Bengal |         10 |  1234 | paypal |            | chadvfgv@tyu.com |      |              |       |         |        |
-  #| Shsja1234  | df356    |123456@gmail.com   |1123456789  |2345678       |anan       |anan             |Enabled   |Capgemini  | capg.com |Bandra    |Mumbai    |Mumbai City  |3456      |India    |West Bengal  |7           |1234   | paypal |            | chadvfgv@tyu.com |      |              |       |         |        |
   @filter_by_name
   Scenario Outline: Search a user using Affiliate Name field
     Given Admin is on the Affiliates Page
@@ -43,13 +44,13 @@ Feature: Affiliate Page
     And Admin fetch the result
 
     Examples: 
-      | aname |
+      | aname     |
+      | hukomuko  |
+      |           |
+      |    123456 |
+      | @#$%!     |
+      | fghiy2234 |
 
-  #| hukomuko |
-  #|           |
-  #| 123456   |
-  #| @#$%!    |
-  #| fghiy2234|
   @filter_by_email
   Scenario Outline: Search a user using Affiliate Email field
     Given Admin is in the Affiliates Page
@@ -59,13 +60,13 @@ Feature: Affiliate Page
     And Admin fetch the result of a user
 
     Examples: 
-      | aemail            |
-      | hasbona@yagoo.com |
+      | aemail             |
+      | hasbona@yagoo.com  |
+      | 1236@gmail.com     |
+      | adchkiu            |
+      | !@#$%^^^@gmail.com |
+      |                    |
 
-  #| 1236@gmail.com    |
-  #| adchkiu           |
-  #| !@#$%^^^@gmail.com|
-  #|                   |
   @filter_by_status
   Scenario Outline: Search a user using status field
     Given Admin is in Affiliates Page
@@ -101,13 +102,11 @@ Feature: Affiliate Page
     And Admin fetch all the result of the users
 
     Examples: 
-      | adate |
+      | adate      |
+      | 07/10/2021 |
+      | 11/10/2021 |
+      | 05/11/2021 |
 
-  #| 07/10/2021 |
-  #| 11/10/2021 |
-  #| 08-10-2021 |
-  #| 05/11/2021 |
-  #| 2021/12/02 |
   @approve
   Scenario Outline: Admin approve the user
     When Admin matches the user then approved"<approve>"
@@ -143,12 +142,12 @@ Feature: Affiliate Page
     When admin wants to select all checkbox or multiple checkboxes"<checkbox>"
 
     Examples: 
-      | checkbox |
+      | checkbox              |
+      | all                   |
+      | Ananya                |
+      | RamGorurer, Shsja1234 |
+      | Shsja1234             |
 
-  # | all              |
-  # | Ananya            |
-  # | RamGorurer, Shsja1234 |
-  #| Shsja1234 |
   @delete
   Scenario Outline: Admin deletes the user
     When admin wants to select all checkbox or multiple checkboxes"<checkbox>"

@@ -19,6 +19,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
+import Hooks.hooksClass;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -27,20 +28,17 @@ import net.bytebuddy.implementation.MethodCall.WithoutSpecifiedTarget;
 
 public class TestDefination {
 
-	WebDriver driver;
+	//WebDriver driver;
+	WebDriver driver = hooksClass.driver;
 
 	@Given("User is on the login page")
 	public void user_is_on_the_login_page() {
-//		 DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-//		    ChromeOptions option = new ChromeOptions();
-//		    option.addArguments("incognito");
-//		    capabilities.setCapability(ChromeOptions.CAPABILITY,option);
 
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\ananya\\Documents\\chromedriver_win32\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "E:\\CapgeminiWorkspace\\CapgDay1\\chromedriver_win32\\chromedriver.exe");
+		
 
-		driver = new ChromeDriver();
-		driver.get("http://retailm1.upskills.in/admin/");
+		//driver = new ChromeDriver();
+		//driver.get("http://retailm1.upskills.in/admin/");
 		// driver.manage().window().maximize();
 		System.out.println("User is on log in page");
 
