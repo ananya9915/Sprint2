@@ -20,9 +20,9 @@ public class hooksClass {
 		}
 		
 		@After
-		public void ending() 
+		public void ending() throws InterruptedException 
 		{
-			
+			Thread.sleep(5000);
 			driver.quit();
 			System.out.println("Browser successfully closed");
 		}

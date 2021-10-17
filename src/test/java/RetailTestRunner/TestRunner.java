@@ -7,9 +7,9 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/java/RetailFeature",
 	glue = { "RetailDefinition","Hooks" }, 
-	tags = {"@newuser"}, 
+	 tags = {"@cancel"},
 	monochrome = true,
-			plugin = {"pretty", "html: target/cucumber-report"})
+			plugin= {"pretty","html:target/cucumber-pretty","junit:target/report.xml","json:target/jsonreport.json"})
 public class TestRunner {
 
 }

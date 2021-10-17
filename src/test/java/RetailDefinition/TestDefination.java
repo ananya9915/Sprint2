@@ -30,7 +30,8 @@ public class TestDefination {
 
 	//WebDriver driver;
 	WebDriver driver = hooksClass.driver;
-
+	
+	SoftAssert obj = new SoftAssert();
 	@Given("User is on the login page")
 	public void user_is_on_the_login_page() {
 
@@ -54,6 +55,7 @@ public class TestDefination {
 
 		} catch (Exception e) {
 			System.out.println("Not able to enter credentials" + e);
+			Assert.fail();
 			
 		}
 
@@ -62,9 +64,11 @@ public class TestDefination {
 	@Then("User clicks the login button")
 	public void user_clicks_the_login_button() {
 		try {
+			Thread.sleep(3000);
 			driver.findElement(By.xpath("//*[@class='btn btn-primary']")).click();
 		} catch (Exception e) {
 			System.out.println("user unble to register" + e);
+			Assert.fail();
 		}
 
 	}
@@ -72,15 +76,18 @@ public class TestDefination {
 	@Then("User is on the dashboard")
 	public void user_is_on_the_dashboard() {
 		try {
+			Thread.sleep(3000);
 			String title = driver.getTitle();
 			String expected = "Dashboard";
 			if (title.equals(expected)) {
 				System.out.println("User is on the dashboard page");
 			} else {
 				System.out.println("User is not on the right page");
+				Assert.fail();
 			}
 		} catch (Exception e) {
 			System.out.println("Title not found: error" + e);
+			Assert.fail();
 		}
 	}
 
@@ -95,6 +102,7 @@ public class TestDefination {
 
 		} catch (Exception e) {
 			System.out.println("user unble to register" + e);
+			Assert.fail();
 		}
 
 	}
@@ -106,6 +114,7 @@ public class TestDefination {
 			driver.findElement(By.xpath("//a[contains(text(),'Affiliates')]")).click();
 		} catch (Exception e) {
 			System.out.println("No Affiliates Option Found: Error " + e);
+			Assert.fail();
 		}
 	}
 
@@ -118,40 +127,49 @@ public class TestDefination {
 				System.out.println("User is on the Affiliates page");
 			} else {
 				System.out.println("User is not on the right page");
+				
+				Assert.fail();
 			}
 		} catch (Exception e) {
 			System.out.println("Title not found: error" + e);
+			Assert.fail();
 		}
 	}
 
 	@Given("Admin is on the Affiliate page")
 	public void admin_is_on_the_Affiliate_page() {
 		try {
+			Thread.sleep(3000);
 			String title = driver.getTitle();
 			String expectedA = "Affiliates";
 			if (title.equals(expectedA)) {
 				System.out.println("User is on the Affiliates page");
 			} else {
 				System.out.println("User is not on the right page");
+				Assert.fail();
 			}
 		} catch (Exception e) {
 			System.out.println("Title not found: error" + e);
+			Assert.fail();
 		}
 	}
 
 	@When("Admin clicks the add new button")
 	public void admin_clicks_the_add_new_button() {
 		try {
+			Thread.sleep(3000);
 			driver.findElement(By.xpath("//a[@class='btn btn-primary' and @data-original-title='Add New']")).click();
 			System.out.println("User is on the add new user page");
 		} catch (Exception e) {
 			System.out.println("Admin not able to click the button "+e);
+			Assert.fail();
 		}
 	}
 
 	@Then("Admin should see add user details")
 	public void admin_should_see_add_user_details() {
 		try {
+			Thread.sleep(3000);
 			String head = driver.findElement(By.xpath("//h3[@class='panel-title']")).getText();
 			String expected = "Add Affiliate";
 			if (head.equals(expected)) {
@@ -223,6 +241,7 @@ public class TestDefination {
 			Thread.sleep(1000);
 		} catch (Exception e) {
 			System.out.println("Admin is not able to enter all the details "+e);
+			Assert.fail();
 		}
 
 	}
@@ -238,6 +257,7 @@ public class TestDefination {
 
 		} catch (Exception e) {
 			System.out.println("Not able to select the country field "+e);
+			Assert.fail();
 		}
 	}
 
@@ -250,6 +270,7 @@ public class TestDefination {
 
 		} catch (Exception e) {
 			System.out.println("Not able to select the states field "+e);
+			Assert.fail();
 		}
 	}
 
@@ -261,6 +282,7 @@ public class TestDefination {
 			System.out.println("Admin is switching to Payment Tab");
 		} catch (Exception ex) {
 			System.out.println("Admin is not able to switching to Payment Tab"+ex);
+			Assert.fail();
 		}
 	}
 
@@ -274,15 +296,18 @@ public class TestDefination {
 				System.out.println("Admin is in the payment tab");
 			} else {
 				System.out.println("Admin in not in payment tab");
+				Assert.fail();
 			}
 		} catch (Exception e) {
 			System.out.println("Admin in not able to navigates to the payment tab"+e);
+			Assert.fail();
 		}
 	}
 
 	@Then("Admin enters the commission{string}, taxid{string}")
 	public void admin_enters_the_commission_taxid(String commission, String taxid) {
 		try {
+			Thread.sleep(3000);
 			driver.findElement(By.id("input-commission")).clear();
 			driver.findElement(By.id("input-commission")).sendKeys(commission);
 			Thread.sleep(3000);
@@ -290,6 +315,7 @@ public class TestDefination {
 			Thread.sleep(3000);
 		} catch (Exception e) {
 			System.out.println("Admin is not able to enter all the details "+e);
+			Assert.fail();
 		}
 	}
 
@@ -374,11 +400,12 @@ public class TestDefination {
 	@Then("Admin verifies the success message")
 	public void admin_verifies_the_success_message() {
 		try {
+			Thread.sleep(3000);
 			String out1 = driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[1]")).getAttribute("class");
 			if (out1.equals("alert alert-success")) {
 				System.out.println("The User Is Saved Properly");
 			} else if (out1.equals("alert alert-danger")) {
-				System.out.println("User Already Exists");
+				System.out.println("User Already Exists or Missing Field");
 			} else {
 				System.out.println("Error");
 			}
@@ -390,6 +417,7 @@ public class TestDefination {
 	@Given("Admin is on the Affiliates Page")
 	public void admin_is_on_the_Affiliates_Page() {
 		try {
+			Thread.sleep(3000);
 			String head = driver.findElement(By.xpath("//h3[@class='panel-title']")).getText();
 			String expected = "Affiliate List";
 			if (head.equals(expected)) {
@@ -431,6 +459,7 @@ public class TestDefination {
 
 		} catch (Exception e) {
 			System.out.println("Admin is not able to clicks the filter button"+e);
+			Assert.fail();
 		}
 	}
 
@@ -444,25 +473,30 @@ public class TestDefination {
 				System.out.println("User Found");
 			} else {
 				System.out.println("user not found");
+				Assert.fail();
 			}
 
 		} catch (Exception e) {
 			System.out.println("Admin is not able to fetch the result "+e);
+			Assert.fail();
 		}
 	}
 
 	@Given("Admin is in the Affiliates Page")
 	public void admin_is_in_the_Affiliates_Page() {
 		try {
+			Thread.sleep(3000);
 			String head = driver.findElement(By.xpath("//h3[@class='panel-title']")).getText();
 			String expected = "Affiliate List";
 			if (head.equals(expected)) {
 				System.out.println("User is on the affiliate search page");
 			} else {
 				System.out.println("User is not on corect page");
+				Assert.fail();
 			}
 		} catch (Exception e) {
 			System.out.println("User is not on corect page"+e);
+			Assert.fail();
 		}
 
 	}
@@ -474,6 +508,7 @@ public class TestDefination {
 			driver.findElement(By.xpath("//input[@id='input-email']")).click();
 		} catch (Exception e) {
 			System.out.println("Admin is not able to clicks the email field"+e);
+			Assert.fail();
 		}
 
 	}
@@ -486,6 +521,7 @@ public class TestDefination {
 
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 
 	}
@@ -498,6 +534,7 @@ public class TestDefination {
 
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
@@ -511,25 +548,30 @@ public class TestDefination {
 				System.out.println("User Found");
 			} else {
 				System.out.println("user not found");
+				Assert.fail();
 			}
 
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
 	@Given("Admin is in Affiliates Page")
 	public void admin_is_in_Affiliates_Page() {
 		try {
+			Thread.sleep(3000);
 			String head = driver.findElement(By.xpath("//h3[@class='panel-title']")).getText();
 			String expected = "Affiliate List";
 			if (head.equals(expected)) {
 				System.out.println("User is on the affiliate search page");
 			} else {
 				System.out.println("User is not on corect page");
+				Assert.fail();
 			}
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 
 	}
@@ -541,6 +583,7 @@ public class TestDefination {
 			driver.findElement(By.xpath("//select[@id=\"input-status\" and @name=\"filter_status\"]")).click();
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 			
 		}
 	}
@@ -556,6 +599,7 @@ public class TestDefination {
 				s.selectByVisibleText(option);
 			} else {
 				System.out.println("Wrong input");
+				Assert.fail();
 			}
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
@@ -571,6 +615,7 @@ public class TestDefination {
 
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 
 	}
@@ -578,6 +623,7 @@ public class TestDefination {
 	@Then("Admin fetch the result of the user")
 	public void admin_fetch_the_result_of_the_user() {
 		try {
+			Thread.sleep(3000);
 			String text = driver.findElement(By.xpath("//div[@class='col-sm-6 text-right']")).getText();
 			String no = text.substring(18, 19);
 			int i = Integer.parseInt(no);
@@ -585,24 +631,29 @@ public class TestDefination {
 				System.out.println("User Found");
 			} else {
 				System.out.println("user not found");
+				Assert.fail();
 			}
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
 	@Given("Admin checks the Affiliates Page")
 	public void admin_checks_the_Affiliates_Page() {
 		try {
+			Thread.sleep(3000);
 			String head = driver.findElement(By.xpath("//h3[@class='panel-title']")).getText();
 			String expected = "Affiliate List";
 			if (head.equals(expected)) {
 				System.out.println("User is on the affiliate search page");
 			} else {
 				System.out.println("User is not on corect page");
+				Assert.fail();
 			}
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
@@ -613,12 +664,14 @@ public class TestDefination {
 			driver.findElement(By.xpath("//*[@id='input-approved']")).click();
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
 	@Then("Admin selects the one optionn{string}")
 	public void admin_selects_the_one_optionn(String optionn) {
 		try {
+			Thread.sleep(3000);
 			//driver.findElement(By.id("input-approved")).click();
 			Select s = new Select(driver.findElement(By.xpath("//*[@id='input-approved']")));
 			Thread.sleep(1000);
@@ -626,9 +679,11 @@ public class TestDefination {
 				s.selectByVisibleText(optionn);
 			} else {
 				System.out.println("Wrong input");
+				Assert.fail();
 			}
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
@@ -640,12 +695,14 @@ public class TestDefination {
 
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
 	@Then("Admin fetch the result of the users")
 	public void admin_fetch_the_result_of_the_users() {
 		try {
+			Thread.sleep(3000);
 			String text = driver.findElement(By.xpath("//div[@class='col-sm-6 text-right']")).getText();
 			String no = text.substring(18, 19);
 			int i = Integer.parseInt(no);
@@ -653,40 +710,48 @@ public class TestDefination {
 				System.out.println("User Found");
 			} else {
 				System.out.println("user not found");
+				Assert.fail();
 			}
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
 	@Given("Admin checks that Affiliates Page")
 	public void admin_checks_that_Affiliates_Page() {
 		try {
+			Thread.sleep(3000);
 			String head = driver.findElement(By.xpath("//h3[@class='panel-title']")).getText();
 			String expected = "Affiliate List";
 			if (head.equals(expected)) {
 				System.out.println("User is on the affiliate search page");
 			} else {
 				System.out.println("User is not on corect page");
+				Assert.fail();
 			}
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
 	@Then("Clicks the date added field")
 	public void clicks_the_date_added_field() {
 		try {
+			
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//input[@id='input-date-added']")).click();
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
 	@Then("Admin selects the date{string}")
 	public void admin_selects_the_date(String adate) {
 		try {
+			Thread.sleep(3000);
 			SimpleDateFormat formatter = new SimpleDateFormat("dd/mm/yyyy");
 			SimpleDateFormat parser = new SimpleDateFormat("yyyy-mm-dd");
 			String dateString = adate;
@@ -696,11 +761,13 @@ public class TestDefination {
 				driver.findElement(By.xpath("//input[@id='input-date-added']")).sendKeys(parser.format(date));
 
 			} catch (Exception e) {
-				System.out.println("Exception Message     "+e);
+				System.out.println("Exception Message "+e);
+				Assert.fail();
 			}
 
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
@@ -712,12 +779,14 @@ public class TestDefination {
 
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
 	@Then("Admin fetch all the result of the users")
 	public void admin_fetch_all_the_result_of_the_users() {
 		try {
+			Thread.sleep(3000);
 			String text = driver.findElement(By.xpath("//div[@class='col-sm-6 text-right']")).getText();
 			String no = text.substring(18, 19);
 			int i = Integer.parseInt(no);
@@ -725,15 +794,18 @@ public class TestDefination {
 				System.out.println("User Found");
 			} else {
 				System.out.println("user not found");
+				Assert.fail();
 			}
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
 	@When("Admin matches the user then approved{string}")
 	public void admin_matches_the_user_then_approved(String approved) {
 		try {
+			Thread.sleep(3000);
 			boolean found = false;
 			for (int i = 0; i < 50; i++) {
 				List<WebElement> ele = driver.findElements(By.tagName("td"));				
@@ -769,12 +841,15 @@ public class TestDefination {
 					
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			
+			Assert.fail();
 		}
 	}
 
 	@When("Admin clicks the edit button{string}")
 	public void admin_clicks_the_edit_button(String useredit) {
 		try {
+			Thread.sleep(3000);
 			boolean found = false; 
 			
 				List<WebElement> ele = driver.findElements(By.xpath("//*[@id='form-affiliate']/div/table//tr"));
@@ -789,13 +864,14 @@ public class TestDefination {
 						//System.out.println(listOfValues);
 						if (listOfValues.contains(useredit)) {
 							try{
+								Thread.sleep(3000);
 							String x = "//*[@id=\"form-affiliate\"]/div/table/tbody/tr[";
 							String y = "]/td[7]/a";
 							driver.findElement(By.xpath(x+j+y)).click();
 
-							System.out.println("User Edited");
+							System.out.println("Edit button clicked");
 						} catch (Exception e) {
-							System.out.println("Not Edited");
+							System.out.println("Edit button not clicked");
 						}
 			
 						break;
@@ -810,21 +886,27 @@ public class TestDefination {
 			}
 		} catch (Exception e) {
 			//System.out.println("Error");
+			
+			//Assert.fail();
 		}
 	}
 
 	@When("Admin visits the Edit Affiliate page")
 	public void admin_visits_the_Edit_Affiliate_page() {
 		try {
+			Thread.sleep(3000);
 			String head = driver.findElement(By.xpath("//h3[@class='panel-title']")).getText();
 			String expected = "Edit Affiliate";
 			if (head.equals(expected)) {
 				System.out.println("User is on the affiliate edit page");
 			} else {
+				
 				System.out.println("User is not on corect page");
+				//Assert.fail();
 			}
 		} catch (Exception e) {
 			System.out.println("User is not on corect page");
+			Assert.fail();
 		}
 	}
 	
@@ -832,33 +914,37 @@ public class TestDefination {
 	public void admin_changed_the_firstname(String ename) {
 	  try
 	  {
-//		  Thread.sleep(3000);
+		  Thread.sleep(3000);
 		  driver.findElement(By.id("input-firstname")).clear();
 		  System.out.println("Cleared");
-//		  Thread.sleep(2000);
+	  Thread.sleep(2000);
 		  driver.findElement(By.id("input-firstname")).sendKeys(ename);
+		  System.out.println("Name changed");
 	  }
 	  catch(Exception e)
 	  {
 		  System.out.println("User is not on the edit page");
+		  Assert.fail();
 	  }
 	}
 
 	@Then("Admin clicks the save button")
 	public void admin_clicks_the_save_button() {
 	 try {
-//		    Thread.sleep(3000);
+	    Thread.sleep(3000);
 //		 	System.out.println("Save Button ");
 			driver.findElement(By.xpath("//button[@class='btn btn-primary']")).click();
 			System.out.println("Save Button Clicked");
 	 } catch (Exception e) {
 		System.out.println("User is not edited or user not found");
+		Assert.fail();
 	}  
 	}
 
 	@Then("Admin gets the success message")
 	public void admin_gets_the_success_message() {
 		try {
+			Thread.sleep(3000);
 			String out1 = driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[1]")).getAttribute("class");
 			if (out1.equals("alert alert-success")) {
 				System.out.println("The User Is Saved Properly");
@@ -869,12 +955,14 @@ public class TestDefination {
 			}
 		} catch (Exception e) {
 			//System.out.println("User Doesent Exists");
+			Assert.fail();
 		}
 	}
 
 	@Then("Admin checks the two values{string}")
 	public void admin_checks_the_two_values(String nvalue) {
 		try {
+			Thread.sleep(3000);
 			boolean found = false; 
 			
 				List<WebElement> ele = driver.findElements(By.xpath("//*[@id='form-affiliate']/div/table//tr"));
@@ -910,6 +998,7 @@ public class TestDefination {
 			}
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
@@ -924,10 +1013,12 @@ public class TestDefination {
 				System.out.println("User is on the add affiliate page");
 			} else {
 				System.out.println("User is not on corect page");
+				Assert.fail();
 			}
 
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
@@ -939,6 +1030,7 @@ public class TestDefination {
 			System.out.println("Admin clicked the back button");
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
@@ -952,15 +1044,18 @@ public class TestDefination {
 				System.out.println("User is on the affiliate search page");
 			} else {
 				System.out.println("User is not on corect page");
+				Assert.fail();
 			}
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
 	@When("admin wants to select all checkbox or multiple checkboxes{string}")
 	public void admin_wants_to_select_all_checkbox_or_multiple_checkboxes(String checkbox) {
 		try {
+			Thread.sleep(3000);
 			if (checkbox.equalsIgnoreCase("all")) {
 				driver.findElement(By.xpath("//*[@id=\"form-affiliate\"]/div/table/thead/tr/td[1]/input")).click();
 				System.out.println("all");
@@ -999,6 +1094,7 @@ public class TestDefination {
 			}
 		} catch (Exception e) {
 			System.out.println("Exception Message:"+e);
+			Assert.fail();
 		}
 	}
 
@@ -1010,6 +1106,7 @@ public class TestDefination {
 				System.out.println("User Is Deleted");
 			} catch (Exception e) {
 				System.out.println("Exception Message:"+e);
+				Assert.fail();
 			}
 		}
 		
@@ -1017,6 +1114,7 @@ public class TestDefination {
 		public void admin_clicks_the_ok_option_in_the_alertbox() {
 			try
 			{
+				Thread.sleep(3000);
 				Alert alert = driver.switchTo().alert();
 				Thread.sleep(3000);
 				alert.accept();
@@ -1024,6 +1122,7 @@ public class TestDefination {
 			catch(Exception e)
 			{
 				System.out.println("Exception Message:"+e);
+				Assert.fail();
 			}
 		    
 		}
@@ -1031,15 +1130,18 @@ public class TestDefination {
 		@Then("Admin gets the message")
 		public void admin_gets_the_message() {
 			try {
+				Thread.sleep(3000);
 				String out1 = driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div[1]")).getAttribute("class");
 				if (out1.equals("alert alert-success")) {
 					System.out.println("The User Is Deleted Successfully");
 				}
 			 else {
 					System.out.println("Error");
+					Assert.fail();
 				}
 			} catch (Exception e) {
 				System.out.println("Exception Message:"+e);
+				Assert.fail();
 			}
 		}
 
