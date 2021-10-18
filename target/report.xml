@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="12" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="28" time="3213.832805">
+    <testcase classname="Affiliate Page" name="Add a new user" time="133.195823">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+Given Admin is on the Affiliate page........................................passed
+When Admin clicks the add new button........................................passed
+Then Admin should see add user details......................................passed
+And Admin enters all the credentials firstname"RamGorurer", lastname"Chana", email"hasbona@yagoo.com", telephone"7965482310", fax"025896314789", password"ananya123", confirmpassword"ananya123".passed
+And Admin selects the Status field"Disabled"................................passed
+And Admin enters all the credentials company"Capgemini", website"capg.com", address1"Bandra", address2"Mumbai", city"Mumbai City", postcode"852697".passed
+And Admin selects the country"India"........................................passed
+And Admin selects the region/state"West Bengal".............................passed
+Then Admin navigates to the payment section.................................passed
+Then Admin is on the payment tab............................................passed
+And Admin enters the commission"10", taxid"1234"............................passed
+And Admin selects a  payment option"paypal".................................passed
+When Admin selects cheque then enters ChequeName""..........................passed
+When Admin selects paypal then enters paypalmail"chadvfgv@tyu.com"..........passed
+When Admin selects bank then enters BankName"", branchnumber"", swift"", accname"", accnum"".passed
+Then Admin saves the new user...............................................passed
+And Admin verifies the success message......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Add a new user 2" time="101.250567">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+Given Admin is on the Affiliate page........................................passed
+When Admin clicks the add new button........................................passed
+Then Admin should see add user details......................................passed
+And Admin enters all the credentials firstname"Sachine", lastname"roy", email"new@gmail.com", telephone"1234567894561345612345456424665789", fax"1234567894561345612345456424665789", password"pqr", confirmpassword"pqr".passed
+And Admin selects the Status field"Enabled".................................passed
+And Admin enters all the credentials company"Capgemini", website"capg.com", address1"Kolkata", address2"Behala", city"gppp", postcode"3456".passed
+And Admin selects the country"India"........................................passed
+And Admin selects the region/state"West Bengal".............................passed
+Then Admin navigates to the payment section.................................passed
+Then Admin is on the payment tab............................................passed
+And Admin enters the commission"6", taxid"1234".............................passed
+And Admin selects a  payment option"paypal".................................passed
+When Admin selects cheque then enters ChequeName""..........................passed
+When Admin selects paypal then enters paypalmail"qwerty123@gmail.xom".......passed
+When Admin selects bank then enters BankName"SBI", branchnumber"45612", swift"7894561345", accname"Sachine", accnum"78945613287".passed
+Then Admin saves the new user...............................................passed
+And Admin verifies the success message......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Search a user using Affiliate Name field" time="51.47891">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+Given Admin is on the Affiliates Page.......................................passed
+Then Clicks the Affiliate Name field........................................passed
+And Admin enters the name"Hukomuko".........................................passed
+Then Admin clicks the filter button.........................................passed
+And Admin fetch the result..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Search a user using Affiliate Name field 2" time="70.931933">
+        <failure message="java.lang.AssertionError: null&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:99)&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:106)&#13;&#10;&#9;at RetailDefinition.TestDefination.admin_fetch_the_result(TestDefination.java:476)&#13;&#10;&#9;at ✽.Admin fetch the result(file:src/test/java/RetailFeature/Retail.feature:49)&#13;&#10;"><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+Given Admin is on the Affiliates Page.......................................passed
+Then Clicks the Affiliate Name field........................................passed
+And Admin enters the name"123456"...........................................passed
+Then Admin clicks the filter button.........................................passed
+And Admin fetch the result..................................................failed
+
+StackTrace:
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at RetailDefinition.TestDefination.admin_fetch_the_result(TestDefination.java:476)
+	at ✽.Admin fetch the result(file:src/test/java/RetailFeature/Retail.feature:49)
+]]></failure>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Search a user using Affiliate Name field 3" time="43.777132">
+        <failure message="java.lang.AssertionError: null&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:99)&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:106)&#13;&#10;&#9;at RetailDefinition.TestDefination.admin_fetch_the_result(TestDefination.java:476)&#13;&#10;&#9;at ✽.Admin fetch the result(file:src/test/java/RetailFeature/Retail.feature:49)&#13;&#10;"><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+Given Admin is on the Affiliates Page.......................................passed
+Then Clicks the Affiliate Name field........................................passed
+And Admin enters the name"@#$%!"............................................passed
+Then Admin clicks the filter button.........................................passed
+And Admin fetch the result..................................................failed
+
+StackTrace:
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at RetailDefinition.TestDefination.admin_fetch_the_result(TestDefination.java:476)
+	at ✽.Admin fetch the result(file:src/test/java/RetailFeature/Retail.feature:49)
+]]></failure>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Search a user using Affiliate Name field 4" time="69.45508">
+        <failure message="java.lang.AssertionError: null&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:99)&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:106)&#13;&#10;&#9;at RetailDefinition.TestDefination.admin_fetch_the_result(TestDefination.java:476)&#13;&#10;&#9;at ✽.Admin fetch the result(file:src/test/java/RetailFeature/Retail.feature:49)&#13;&#10;"><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+Given Admin is on the Affiliates Page.......................................passed
+Then Clicks the Affiliate Name field........................................passed
+And Admin enters the name"fghiy2234"........................................passed
+Then Admin clicks the filter button.........................................passed
+And Admin fetch the result..................................................failed
+
+StackTrace:
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at RetailDefinition.TestDefination.admin_fetch_the_result(TestDefination.java:476)
+	at ✽.Admin fetch the result(file:src/test/java/RetailFeature/Retail.feature:49)
+]]></failure>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Search a user using Affiliate Email field" time="61.32843">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+Given Admin is in the Affiliates Page.......................................passed
+Then Clicks the Affiliate Email field.......................................passed
+And Admin enters the email"hasbona@yagoo.com"...............................passed
+Then Admin clicks the filter button to search...............................passed
+And Admin fetch the result of a user........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Search a user using Affiliate Email field 2" time="81.771426">
+        <failure message="java.lang.AssertionError: null&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:99)&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:106)&#13;&#10;&#9;at RetailDefinition.TestDefination.admin_fetch_the_result_of_a_user(TestDefination.java:551)&#13;&#10;&#9;at ✽.Admin fetch the result of a user(file:src/test/java/RetailFeature/Retail.feature:64)&#13;&#10;"><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+Given Admin is in the Affiliates Page.......................................passed
+Then Clicks the Affiliate Email field.......................................passed
+And Admin enters the email"1236@gmail.com"..................................passed
+Then Admin clicks the filter button to search...............................passed
+And Admin fetch the result of a user........................................failed
+
+StackTrace:
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at RetailDefinition.TestDefination.admin_fetch_the_result_of_a_user(TestDefination.java:551)
+	at ✽.Admin fetch the result of a user(file:src/test/java/RetailFeature/Retail.feature:64)
+]]></failure>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Search a user using Affiliate Email field 3" time="90.347699">
+        <failure message="java.lang.AssertionError: null&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:99)&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:106)&#13;&#10;&#9;at RetailDefinition.TestDefination.admin_fetch_the_result_of_a_user(TestDefination.java:551)&#13;&#10;&#9;at ✽.Admin fetch the result of a user(file:src/test/java/RetailFeature/Retail.feature:64)&#13;&#10;"><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+Given Admin is in the Affiliates Page.......................................passed
+Then Clicks the Affiliate Email field.......................................passed
+And Admin enters the email"adchkiu".........................................passed
+Then Admin clicks the filter button to search...............................passed
+And Admin fetch the result of a user........................................failed
+
+StackTrace:
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at RetailDefinition.TestDefination.admin_fetch_the_result_of_a_user(TestDefination.java:551)
+	at ✽.Admin fetch the result of a user(file:src/test/java/RetailFeature/Retail.feature:64)
+]]></failure>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Search a user using Affiliate Email field 4" time="44.29404">
+        <failure message="java.lang.AssertionError: null&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:99)&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:106)&#13;&#10;&#9;at RetailDefinition.TestDefination.admin_fetch_the_result_of_a_user(TestDefination.java:551)&#13;&#10;&#9;at ✽.Admin fetch the result of a user(file:src/test/java/RetailFeature/Retail.feature:64)&#13;&#10;"><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+Given Admin is in the Affiliates Page.......................................passed
+Then Clicks the Affiliate Email field.......................................passed
+And Admin enters the email"!@$%^^^@gmail.com"...............................passed
+Then Admin clicks the filter button to search...............................passed
+And Admin fetch the result of a user........................................failed
+
+StackTrace:
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at RetailDefinition.TestDefination.admin_fetch_the_result_of_a_user(TestDefination.java:551)
+	at ✽.Admin fetch the result of a user(file:src/test/java/RetailFeature/Retail.feature:64)
+]]></failure>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Search a user using status field" time="44.110712">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+Given Admin is in Affiliates Page...........................................passed
+Then Clicks the status field................................................passed
+And Admin selects the option"Disabled"......................................passed
+Then Admin clicks the filter button to search the user......................passed
+And Admin fetch the result of the user......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Search a user using status field 2" time="165.176137">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+Given Admin is in Affiliates Page...........................................passed
+Then Clicks the status field................................................passed
+And Admin selects the option"Enabled".......................................passed
+Then Admin clicks the filter button to search the user......................passed
+And Admin fetch the result of the user......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Search a user using Approved field" time="277.91854">
+        <failure message="java.lang.AssertionError: null&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:99)&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:106)&#13;&#10;&#9;at RetailDefinition.TestDefination.user_clicks_the_marketing_option(TestDefination.java:105)&#13;&#10;&#9;at ✽.User clicks the marketing option(file:src/test/java/RetailFeature/Retail.feature:8)&#13;&#10;"><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................failed
+Then User clicks the affiliates option......................................skipped
+Then User is in the affiliates page.........................................skipped
+Given Admin checks the Affiliates Page......................................skipped
+Then Clicks the approved field..............................................skipped
+And Admin selects the one optionn"No".......................................skipped
+Then Admin clicks the filter button to search the users.....................skipped
+And Admin fetch the result of the users.....................................skipped
+
+StackTrace:
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at RetailDefinition.TestDefination.user_clicks_the_marketing_option(TestDefination.java:105)
+	at ✽.User clicks the marketing option(file:src/test/java/RetailFeature/Retail.feature:8)
+]]></failure>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Search a user using Approved field 2" time="100.662586">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+Given Admin checks the Affiliates Page......................................passed
+Then Clicks the approved field..............................................passed
+And Admin selects the one optionn"Yes"......................................passed
+Then Admin clicks the filter button to search the users.....................passed
+And Admin fetch the result of the users.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Search a user using date field" time="296.060523">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+Given Admin checks that Affiliates Page.....................................passed
+Then Clicks the date added field............................................passed
+And Admin selects the date"17/10/2021"......................................passed
+Then Admin clicks the filter button to search the users by date.............passed
+And Admin fetch all the result of the users.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Search a user using date field 2" time="142.911431">
+        <failure message="java.lang.AssertionError: null&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:99)&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:106)&#13;&#10;&#9;at RetailDefinition.TestDefination.admin_fetch_all_the_result_of_the_users(TestDefination.java:797)&#13;&#10;&#9;at ✽.Admin fetch all the result of the users(file:src/test/java/RetailFeature/Retail.feature:105)&#13;&#10;"><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+Given Admin checks that Affiliates Page.....................................passed
+Then Clicks the date added field............................................passed
+And Admin selects the date"11/10/2021"......................................passed
+Then Admin clicks the filter button to search the users by date.............passed
+And Admin fetch all the result of the users.................................failed
+
+StackTrace:
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at RetailDefinition.TestDefination.admin_fetch_all_the_result_of_the_users(TestDefination.java:797)
+	at ✽.Admin fetch all the result of the users(file:src/test/java/RetailFeature/Retail.feature:105)
+]]></failure>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Search a user using date field 3" time="46.060525">
+        <failure message="java.lang.AssertionError: null&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:99)&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:106)&#13;&#10;&#9;at RetailDefinition.TestDefination.admin_fetch_all_the_result_of_the_users(TestDefination.java:797)&#13;&#10;&#9;at ✽.Admin fetch all the result of the users(file:src/test/java/RetailFeature/Retail.feature:105)&#13;&#10;"><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+Given Admin checks that Affiliates Page.....................................passed
+Then Clicks the date added field............................................passed
+And Admin selects the date"05/11/2021"......................................passed
+Then Admin clicks the filter button to search the users by date.............passed
+And Admin fetch all the result of the users.................................failed
+
+StackTrace:
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at RetailDefinition.TestDefination.admin_fetch_all_the_result_of_the_users(TestDefination.java:797)
+	at ✽.Admin fetch all the result of the users(file:src/test/java/RetailFeature/Retail.feature:105)
+]]></failure>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Admin approve the user" time="104.869621">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+When Admin matches the user then approved"qwerty"...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Admin approve the user 2" time="92.670555">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+When Admin matches the user then approved"pqr"..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Admin approve the user 3" time="119.440225">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+When Admin matches the user then approved"hukomuko".........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Admin edit the user details" time="136.924603">
+        <failure message="java.lang.AssertionError: null&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:99)&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:106)&#13;&#10;&#9;at RetailDefinition.TestDefination.user_enter_username_and_password(TestDefination.java:58)&#13;&#10;&#9;at ✽.User enter username and password(file:src/test/java/RetailFeature/Retail.feature:5)&#13;&#10;"><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................failed
+Then User clicks the login button...........................................skipped
+And User is on the dashboard................................................skipped
+When User clicks the marketing option.......................................skipped
+Then User clicks the affiliates option......................................skipped
+Then User is in the affiliates page.........................................skipped
+When Admin clicks the edit button"Abcd".....................................skipped
+And Admin visits the Edit Affiliate page....................................skipped
+Then Admin changed the firstname"Tom".......................................skipped
+And Admin clicks the save button............................................skipped
+Then Admin gets the success message.........................................skipped
+And Admin checks the two values"Tom"........................................skipped
+
+StackTrace:
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at RetailDefinition.TestDefination.user_enter_username_and_password(TestDefination.java:58)
+	at ✽.User enter username and password(file:src/test/java/RetailFeature/Retail.feature:5)
+]]></failure>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Admin edit the user details 2" time="149.680437">
+        <failure message="java.lang.AssertionError: null&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:99)&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:106)&#13;&#10;&#9;at RetailDefinition.TestDefination.admin_checks_the_two_values(TestDefination.java:1001)&#13;&#10;&#9;at ✽.Admin checks the two values&quot;abc&quot;(file:src/test/java/RetailFeature/Retail.feature:130)&#13;&#10;"><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+When Admin clicks the edit button"pqr"......................................passed
+And Admin visits the Edit Affiliate page....................................passed
+Then Admin changed the firstname"abc".......................................passed
+And Admin clicks the save button............................................passed
+Then Admin gets the success message.........................................passed
+And Admin checks the two values"abc"........................................failed
+
+StackTrace:
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at RetailDefinition.TestDefination.admin_checks_the_two_values(TestDefination.java:1001)
+	at ✽.Admin checks the two values"abc"(file:src/test/java/RetailFeature/Retail.feature:130)
+]]></failure>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Admin cancels the add new user" time="42.752793">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+When Admin clicks the add new button........................................passed
+Then Admin navigates to the add affiliate page..............................passed
+And Admin clicks the cancel button..........................................passed
+Then Admin again navigates to the Affiliate List page.......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Admin selects the checkbox" time="50.663248">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+When admin wants to select all checkbox or multiple checkboxes"all".........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Admin selects the checkbox 2" time="274.788147">
+        <failure message="java.lang.AssertionError: null&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:99)&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:106)&#13;&#10;&#9;at RetailDefinition.TestDefination.user_clicks_the_marketing_option(TestDefination.java:105)&#13;&#10;&#9;at ✽.User clicks the marketing option(file:src/test/java/RetailFeature/Retail.feature:8)&#13;&#10;"><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................failed
+Then User clicks the affiliates option......................................skipped
+Then User is in the affiliates page.........................................skipped
+When admin wants to select all checkbox or multiple checkboxes"Apple".......skipped
+
+StackTrace:
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at RetailDefinition.TestDefination.user_clicks_the_marketing_option(TestDefination.java:105)
+	at ✽.User clicks the marketing option(file:src/test/java/RetailFeature/Retail.feature:8)
+]]></failure>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Admin selects the checkbox 3" time="217.274126">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+When admin wants to select all checkbox or multiple checkboxes"Ramgoru, Hukomuko".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Admin selects the checkbox 4" time="158.743171">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+When admin wants to select all checkbox or multiple checkboxes"abcdef"......passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affiliate Page" name="Admin deletes the user" time="45.294385">
+        <system-out><![CDATA[Given User is on the login page.............................................passed
+When User enter username and password.......................................passed
+Then User clicks the login button...........................................passed
+And User is on the dashboard................................................passed
+When User clicks the marketing option.......................................passed
+Then User clicks the affiliates option......................................passed
+Then User is in the affiliates page.........................................passed
+When admin wants to select all checkbox or multiple checkboxes"Abcd"........passed
+When Admin clicks the delete button.........................................passed
+And Admin clicks the ok option in the alertbox..............................passed
+Then Admin gets the message.................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

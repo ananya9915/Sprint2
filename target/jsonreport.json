@@ -1,0 +1,5747 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 939099,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6157018799,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44234621800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3030398501,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5131852300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2927306000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6046100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:02:03.213Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4401010399,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Add a new user",
+        "description": "",
+        "id": "affiliate-page;add-a-new-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5268458800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3006747300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Admin is on the Affiliate page",
+            "match": {
+              "location": "TestDefination.admin_is_on_the_Affiliate_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3927735300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Admin clicks the add new button",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_add_new_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3049669800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Admin should see add user details",
+            "match": {
+              "location": "TestDefination.admin_should_see_add_user_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8600421200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Admin enters all the credentials firstname\"RamGorurer\", lastname\"Chana\", email\"hasbona@yagoo.com\", telephone\"7965482310\", fax\"025896314789\", password\"ananya123\", confirmpassword\"ananya123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RamGorurer\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"Chana\"",
+                  "offset": 64
+                },
+                {
+                  "val": "\"hasbona@yagoo.com\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"7965482310\"",
+                  "offset": 108
+                },
+                {
+                  "val": "\"025896314789\"",
+                  "offset": 125
+                },
+                {
+                  "val": "\"ananya123\"",
+                  "offset": 149
+                },
+                {
+                  "val": "\"ananya123\"",
+                  "offset": 177
+                }
+              ],
+              "location": "TestDefination.admin_enters_all_the_credentials_firstname_lastname_email_telephone_fax_password_confirmpassword(String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1104777800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Admin selects the Status field\"Disabled\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Disabled\"",
+                  "offset": 30
+                }
+              ],
+              "location": "TestDefination.admin_selects_the_Status_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7552432000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Admin enters all the credentials company\"Capgemini\", website\"capg.com\", address1\"Bandra\", address2\"Mumbai\", city\"Mumbai City\", postcode\"852697\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Capgemini\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"capg.com\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"Bandra\"",
+                  "offset": 80
+                },
+                {
+                  "val": "\"Mumbai\"",
+                  "offset": 98
+                },
+                {
+                  "val": "\"Mumbai City\"",
+                  "offset": 112
+                },
+                {
+                  "val": "\"852697\"",
+                  "offset": 135
+                }
+              ],
+              "location": "TestDefination.admin_enters_all_the_credentials_company_website_address_address_city_postcode(String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1102142600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Admin selects the country\"India\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"India\"",
+                  "offset": 25
+                }
+              ],
+              "location": "TestDefination.admin_selects_the_country(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5090667500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Admin selects the region/state\"West Bengal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"West Bengal\"",
+                  "offset": 30
+                }
+              ],
+              "location": "TestDefination.admin_selects_the_region_state(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3073212000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Admin navigates to the payment section",
+            "match": {
+              "location": "TestDefination.admin_navigates_to_the_payment_section()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18926000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Admin is on the payment tab",
+            "match": {
+              "location": "TestDefination.admin_is_on_the_payment_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9215305300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Admin enters the commission\"10\", taxid\"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"1234\"",
+                  "offset": 38
+                }
+              ],
+              "location": "TestDefination.admin_enters_the_commission_taxid(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3074468300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Admin selects a  payment option\"paypal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"paypal\"",
+                  "offset": 31
+                }
+              ],
+              "location": "TestDefination.admin_selects_a_payment_option(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3035477600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Admin selects cheque then enters ChequeName\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 43
+                }
+              ],
+              "location": "TestDefination.admin_selects_cheque_then_enters_ChequeName(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3105752900,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Admin selects paypal then enters paypalmail\"chadvfgv@tyu.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"chadvfgv@tyu.com\"",
+                  "offset": 43
+                }
+              ],
+              "location": "TestDefination.admin_selects_paypal_then_enters_paypalmail(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23384400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Admin selects bank then enters BankName\"\", branchnumber\"\", swift\"\", accname\"\", accnum\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 64
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 75
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 85
+                }
+              ],
+              "location": "TestDefination.admin_selects_bank_then_enters_BankName_branchnumber_swift_accname_accnum(String,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3995187800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Admin saves the new user",
+            "match": {
+              "location": "TestDefination.admin_saves_the_new_user()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3057887800,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Admin verifies the success message",
+            "match": {
+              "location": "TestDefination.admin_verifies_the_success_message()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@newuser"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 110200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6137909600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13205771100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3028264800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5152231300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2872737200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50539400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:04:16.410Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3175239500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 41,
+        "name": "Add a new user",
+        "description": "",
+        "id": "affiliate-page;add-a-new-user;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 5265131200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3025076500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Admin is on the Affiliate page",
+            "match": {
+              "location": "TestDefination.admin_is_on_the_Affiliate_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3914479900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Admin clicks the add new button",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_add_new_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3044281300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Admin should see add user details",
+            "match": {
+              "location": "TestDefination.admin_should_see_add_user_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8610993400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Admin enters all the credentials firstname\"Sachine\", lastname\"roy\", email\"new@gmail.com\", telephone\"1234567894561345612345456424665789\", fax\"1234567894561345612345456424665789\", password\"pqr\", confirmpassword\"pqr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sachine\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"roy\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"new@gmail.com\"",
+                  "offset": 73
+                },
+                {
+                  "val": "\"1234567894561345612345456424665789\"",
+                  "offset": 99
+                },
+                {
+                  "val": "\"1234567894561345612345456424665789\"",
+                  "offset": 140
+                },
+                {
+                  "val": "\"pqr\"",
+                  "offset": 186
+                },
+                {
+                  "val": "\"pqr\"",
+                  "offset": 208
+                }
+              ],
+              "location": "TestDefination.admin_enters_all_the_credentials_firstname_lastname_email_telephone_fax_password_confirmpassword(String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1062616800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Admin selects the Status field\"Enabled\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Enabled\"",
+                  "offset": 30
+                }
+              ],
+              "location": "TestDefination.admin_selects_the_Status_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7512947600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Admin enters all the credentials company\"Capgemini\", website\"capg.com\", address1\"Kolkata\", address2\"Behala\", city\"gppp\", postcode\"3456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Capgemini\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"capg.com\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"Kolkata\"",
+                  "offset": 80
+                },
+                {
+                  "val": "\"Behala\"",
+                  "offset": 99
+                },
+                {
+                  "val": "\"gppp\"",
+                  "offset": 113
+                },
+                {
+                  "val": "\"3456\"",
+                  "offset": 129
+                }
+              ],
+              "location": "TestDefination.admin_enters_all_the_credentials_company_website_address_address_city_postcode(String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1083012000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Admin selects the country\"India\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"India\"",
+                  "offset": 25
+                }
+              ],
+              "location": "TestDefination.admin_selects_the_country(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5089101700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Admin selects the region/state\"West Bengal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"West Bengal\"",
+                  "offset": 30
+                }
+              ],
+              "location": "TestDefination.admin_selects_the_region_state(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3088173900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Admin navigates to the payment section",
+            "match": {
+              "location": "TestDefination.admin_navigates_to_the_payment_section()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18118700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Admin is on the payment tab",
+            "match": {
+              "location": "TestDefination.admin_is_on_the_payment_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9212103400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Admin enters the commission\"6\", taxid\"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"6\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"1234\"",
+                  "offset": 37
+                }
+              ],
+              "location": "TestDefination.admin_enters_the_commission_taxid(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3072893700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Admin selects a  payment option\"paypal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"paypal\"",
+                  "offset": 31
+                }
+              ],
+              "location": "TestDefination.admin_selects_a_payment_option(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3041883900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Admin selects cheque then enters ChequeName\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 43
+                }
+              ],
+              "location": "TestDefination.admin_selects_cheque_then_enters_ChequeName(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3113096100,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Admin selects paypal then enters paypalmail\"qwerty123@gmail.xom\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwerty123@gmail.xom\"",
+                  "offset": 43
+                }
+              ],
+              "location": "TestDefination.admin_selects_paypal_then_enters_paypalmail(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20451100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Admin selects bank then enters BankName\"SBI\", branchnumber\"45612\", swift\"7894561345\", accname\"Sachine\", accnum\"78945613287\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SBI\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"45612\"",
+                  "offset": 58
+                },
+                {
+                  "val": "\"7894561345\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"Sachine\"",
+                  "offset": 93
+                },
+                {
+                  "val": "\"78945613287\"",
+                  "offset": 110
+                }
+              ],
+              "location": "TestDefination.admin_selects_bank_then_enters_BankName_branchnumber_swift_accname_accnum(String,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4421630700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Admin saves the new user",
+            "match": {
+              "location": "TestDefination.admin_saves_the_new_user()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3030739400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Admin verifies the success message",
+            "match": {
+              "location": "TestDefination.admin_verifies_the_success_message()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@newuser"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 198400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6141456900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12215959100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3014748000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5115381100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2917099800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8314900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:05:57.662Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3993862300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 53,
+        "name": "Search a user using Affiliate Name field",
+        "description": "",
+        "id": "affiliate-page;search-a-user-using-affiliate-name-field;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5210990500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3045439100,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Admin is on the Affiliates Page",
+            "match": {
+              "location": "TestDefination.admin_is_on_the_Affiliates_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3087934000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Clicks the Affiliate Name field",
+            "match": {
+              "location": "TestDefination.clicks_the_Affiliate_Name_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3074797500,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Admin enters the name\"Hukomuko\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hukomuko\"",
+                  "offset": 21
+                }
+              ],
+              "location": "TestDefination.admin_enters_the_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3613240900,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Admin clicks the filter button",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_filter_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38822300,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Admin fetch the result",
+            "match": {
+              "location": "TestDefination.admin_fetch_the_result()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter_by_name"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 106800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6146870600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32659734500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3021595000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5141671000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2942804600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10131700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:06:49.142Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2932298400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 54,
+        "name": "Search a user using Affiliate Name field",
+        "description": "",
+        "id": "affiliate-page;search-a-user-using-affiliate-name-field;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 5203408200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3043061500,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Admin is on the Affiliates Page",
+            "match": {
+              "location": "TestDefination.admin_is_on_the_Affiliates_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3066333900,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Clicks the Affiliate Name field",
+            "match": {
+              "location": "TestDefination.clicks_the_Affiliate_Name_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3064190400,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Admin enters the name\"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123456\"",
+                  "offset": 21
+                }
+              ],
+              "location": "TestDefination.admin_enters_the_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3661905400,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Admin clicks the filter button",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_filter_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: null\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.fail(Assert.java:106)\r\n\tat RetailDefinition.TestDefination.admin_fetch_the_result(TestDefination.java:476)\r\n\tat ✽.Admin fetch the result(file:src/test/java/RetailFeature/Retail.feature:49)\r\n",
+              "duration": 37364200,
+              "status": "failed"
+            },
+            "line": 49,
+            "name": "Admin fetch the result",
+            "match": {
+              "location": "TestDefination.admin_fetch_the_result()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter_by_name"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 110100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6170876100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5306841900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3010123700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5126872500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2651561800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4480300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:08:00.080Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3485136100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 55,
+        "name": "Search a user using Affiliate Name field",
+        "description": "",
+        "id": "affiliate-page;search-a-user-using-affiliate-name-field;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 5209172400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3049687700,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Admin is on the Affiliates Page",
+            "match": {
+              "location": "TestDefination.admin_is_on_the_Affiliates_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3058720600,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Clicks the Affiliate Name field",
+            "match": {
+              "location": "TestDefination.clicks_the_Affiliate_Name_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3051090700,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Admin enters the name\"@#$%!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"@#$%!\"",
+                  "offset": 21
+                }
+              ],
+              "location": "TestDefination.admin_enters_the_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3614791300,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Admin clicks the filter button",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_filter_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: null\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.fail(Assert.java:106)\r\n\tat RetailDefinition.TestDefination.admin_fetch_the_result(TestDefination.java:476)\r\n\tat ✽.Admin fetch the result(file:src/test/java/RetailFeature/Retail.feature:49)\r\n",
+              "duration": 37256700,
+              "status": "failed"
+            },
+            "line": 49,
+            "name": "Admin fetch the result",
+            "match": {
+              "location": "TestDefination.admin_fetch_the_result()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter_by_name"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 120700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6152296700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28543586100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3011344000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5130831500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4963434500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4084200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:08:43.858Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3423355500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 56,
+        "name": "Search a user using Affiliate Name field",
+        "description": "",
+        "id": "affiliate-page;search-a-user-using-affiliate-name-field;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 5257830100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3056481600,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Admin is on the Affiliates Page",
+            "match": {
+              "location": "TestDefination.admin_is_on_the_Affiliates_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3080648600,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Clicks the Affiliate Name field",
+            "match": {
+              "location": "TestDefination.clicks_the_Affiliate_Name_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3070775500,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Admin enters the name\"fghiy2234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fghiy2234\"",
+                  "offset": 21
+                }
+              ],
+              "location": "TestDefination.admin_enters_the_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3725990300,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Admin clicks the filter button",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_filter_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: null\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.fail(Assert.java:106)\r\n\tat RetailDefinition.TestDefination.admin_fetch_the_result(TestDefination.java:476)\r\n\tat ✽.Admin fetch the result(file:src/test/java/RetailFeature/Retail.feature:49)\r\n",
+              "duration": 33853700,
+              "status": "failed"
+            },
+            "line": 49,
+            "name": "Admin fetch the result",
+            "match": {
+              "location": "TestDefination.admin_fetch_the_result()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter_by_name"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 111900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6145229900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8540674000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3022914100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5142261700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16381067000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5109800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:09:53.314Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3882254600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 68,
+        "name": "Search a user using Affiliate Email field",
+        "description": "",
+        "id": "affiliate-page;search-a-user-using-affiliate-email-field;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5225295900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3036371400,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "Admin is in the Affiliates Page",
+            "match": {
+              "location": "TestDefination.admin_is_in_the_Affiliates_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3097932900,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "Clicks the Affiliate Email field",
+            "match": {
+              "location": "TestDefination.clicks_the_Affiliate_Email_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3054829200,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "Admin enters the email\"hasbona@yagoo.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hasbona@yagoo.com\"",
+                  "offset": 22
+                }
+              ],
+              "location": "TestDefination.admin_enters_the_email(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3753698700,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "Admin clicks the filter button to search",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_filter_button_to_search()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 40059100,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "Admin fetch the result of a user",
+            "match": {
+              "location": "TestDefination.admin_fetch_the_result_of_a_user()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter_by_email"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 110700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6142830800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4475688900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3007614000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5136203500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41494169600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5101000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:10:54.645Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3294525400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 69,
+        "name": "Search a user using Affiliate Email field",
+        "description": "",
+        "id": "affiliate-page;search-a-user-using-affiliate-email-field;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 5238135700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3045220500,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "Admin is in the Affiliates Page",
+            "match": {
+              "location": "TestDefination.admin_is_in_the_Affiliates_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3095257700,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "Clicks the Affiliate Email field",
+            "match": {
+              "location": "TestDefination.clicks_the_Affiliate_Email_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3073571200,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "Admin enters the email\"1236@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1236@gmail.com\"",
+                  "offset": 22
+                }
+              ],
+              "location": "TestDefination.admin_enters_the_email(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3725111900,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "Admin clicks the filter button to search",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_filter_button_to_search()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: null\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.fail(Assert.java:106)\r\n\tat RetailDefinition.TestDefination.admin_fetch_the_result_of_a_user(TestDefination.java:551)\r\n\tat ✽.Admin fetch the result of a user(file:src/test/java/RetailFeature/Retail.feature:64)\r\n",
+              "duration": 37236500,
+              "status": "failed"
+            },
+            "line": 64,
+            "name": "Admin fetch the result of a user",
+            "match": {
+              "location": "TestDefination.admin_fetch_the_result_of_a_user()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter_by_email"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 161500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6161368900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50377239300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3007712400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5120817700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3011980000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11285800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:12:16.418Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4537509800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 70,
+        "name": "Search a user using Affiliate Email field",
+        "description": "",
+        "id": "affiliate-page;search-a-user-using-affiliate-email-field;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 5229746500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3062866900,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "Admin is in the Affiliates Page",
+            "match": {
+              "location": "TestDefination.admin_is_in_the_Affiliates_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3111525000,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "Clicks the Affiliate Email field",
+            "match": {
+              "location": "TestDefination.clicks_the_Affiliate_Email_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3071725500,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "Admin enters the email\"adchkiu\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"adchkiu\"",
+                  "offset": 22
+                }
+              ],
+              "location": "TestDefination.admin_enters_the_email(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3606020600,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "Admin clicks the filter button to search",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_filter_button_to_search()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: null\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.fail(Assert.java:106)\r\n\tat RetailDefinition.TestDefination.admin_fetch_the_result_of_a_user(TestDefination.java:551)\r\n\tat ✽.Admin fetch the result of a user(file:src/test/java/RetailFeature/Retail.feature:64)\r\n",
+              "duration": 37326300,
+              "status": "failed"
+            },
+            "line": 64,
+            "name": "Admin fetch the result of a user",
+            "match": {
+              "location": "TestDefination.admin_fetch_the_result_of_a_user()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter_by_email"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 109900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6171468600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4474463800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3021933100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5135877000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3031969000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4754200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:13:46.767Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4111404300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 71,
+        "name": "Search a user using Affiliate Email field",
+        "description": "",
+        "id": "affiliate-page;search-a-user-using-affiliate-email-field;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 5342893600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3060694000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "Admin is in the Affiliates Page",
+            "match": {
+              "location": "TestDefination.admin_is_in_the_Affiliates_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3095706600,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "Clicks the Affiliate Email field",
+            "match": {
+              "location": "TestDefination.clicks_the_Affiliate_Email_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3088851900,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "Admin enters the email\"!@$%^^^@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"!@$%^^^@gmail.com\"",
+                  "offset": 22
+                }
+              ],
+              "location": "TestDefination.admin_enters_the_email(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3711858500,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "Admin clicks the filter button to search",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_filter_button_to_search()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: null\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.fail(Assert.java:106)\r\n\tat RetailDefinition.TestDefination.admin_fetch_the_result_of_a_user(TestDefination.java:551)\r\n\tat ✽.Admin fetch the result of a user(file:src/test/java/RetailFeature/Retail.feature:64)\r\n",
+              "duration": 41649300,
+              "status": "failed"
+            },
+            "line": 64,
+            "name": "Admin fetch the result of a user",
+            "match": {
+              "location": "TestDefination.admin_fetch_the_result_of_a_user()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter_by_email"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 113500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6161706100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4245763200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3006321300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5120120600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2673581400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5031000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:14:31.062Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3654375600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 83,
+        "name": "Search a user using status field",
+        "description": "",
+        "id": "affiliate-page;search-a-user-using-status-field;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5246259200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3058646500,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "Admin is in Affiliates Page",
+            "match": {
+              "location": "TestDefination.admin_is_in_Affiliates_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3090132200,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "Clicks the status field",
+            "match": {
+              "location": "TestDefination.clicks_the_status_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1081675700,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "Admin selects the option\"Disabled\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Disabled\"",
+                  "offset": 24
+                }
+              ],
+              "location": "TestDefination.admin_selects_the_option(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3715161200,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "Admin clicks the filter button to search the user",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_filter_button_to_search_the_user()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3051273400,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "Admin fetch the result of the user",
+            "match": {
+              "location": "TestDefination.admin_fetch_the_result_of_the_user()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter_by_status"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 143600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6140020100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 124539316800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3015036500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5133673200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2918498900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4339300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:15:15.178Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4033421900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 84,
+        "name": "Search a user using status field",
+        "description": "",
+        "id": "affiliate-page;search-a-user-using-status-field;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 5231019100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3048824100,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "Admin is in Affiliates Page",
+            "match": {
+              "location": "TestDefination.admin_is_in_Affiliates_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3066241600,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "Clicks the status field",
+            "match": {
+              "location": "TestDefination.clicks_the_status_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1101575500,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "Admin selects the option\"Enabled\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Enabled\"",
+                  "offset": 24
+                }
+              ],
+              "location": "TestDefination.admin_selects_the_option(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3878713100,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "Admin clicks the filter button to search the user",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_filter_button_to_search_the_user()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3064649300,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "Admin fetch the result of the user",
+            "match": {
+              "location": "TestDefination.admin_fetch_the_result_of_the_user()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter_by_status"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 118500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6148046800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 255591294700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3024040700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: null\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.fail(Assert.java:106)\r\n\tat RetailDefinition.TestDefination.user_clicks_the_marketing_option(TestDefination.java:105)\r\n\tat ✽.User clicks the marketing option(file:src/test/java/RetailFeature/Retail.feature:8)\r\n",
+              "duration": 3140098700,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8300,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3400,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:18:00.356Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4766899200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 96,
+        "name": "Search a user using Approved field",
+        "description": "",
+        "id": "affiliate-page;search-a-user-using-approved-field;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5247575200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1700,
+              "status": "skipped"
+            },
+            "line": 88,
+            "name": "Admin checks the Affiliates Page",
+            "match": {
+              "location": "TestDefination.admin_checks_the_Affiliates_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 89,
+            "name": "Clicks the approved field",
+            "match": {
+              "location": "TestDefination.clicks_the_approved_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1500,
+              "status": "skipped"
+            },
+            "line": 90,
+            "name": "Admin selects the one optionn\"No\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"No\"",
+                  "offset": 29
+                }
+              ],
+              "location": "TestDefination.admin_selects_the_one_optionn(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 91,
+            "name": "Admin clicks the filter button to search the users",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_filter_button_to_search_the_users()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 92,
+            "name": "Admin fetch the result of the users",
+            "match": {
+              "location": "TestDefination.admin_fetch_the_result_of_the_users()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter3_by_approved"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 148900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6137997300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56869237600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3017080800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5136978600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3088152900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3366800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:22:38.275Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3407640200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 97,
+        "name": "Search a user using Approved field",
+        "description": "",
+        "id": "affiliate-page;search-a-user-using-approved-field;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 5247987200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3036822100,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "Admin checks the Affiliates Page",
+            "match": {
+              "location": "TestDefination.admin_checks_the_Affiliates_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3089304300,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "Clicks the approved field",
+            "match": {
+              "location": "TestDefination.clicks_the_approved_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4108629800,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "Admin selects the one optionn\"Yes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yes\"",
+                  "offset": 29
+                }
+              ],
+              "location": "TestDefination.admin_selects_the_one_optionn(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4458827500,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "Admin clicks the filter button to search the users",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_filter_button_to_search_the_users()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3060012400,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "Admin fetch the result of the users",
+            "match": {
+              "location": "TestDefination.admin_fetch_the_result_of_the_users()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter3_by_approved"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 183900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6154461400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4564273900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3012772600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5141918300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 251774421100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5323300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:24:18.938Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4098751500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 109,
+        "name": "Search a user using date field",
+        "description": "",
+        "id": "affiliate-page;search-a-user-using-date-field;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5165784300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3041469200,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "Admin checks that Affiliates Page",
+            "match": {
+              "location": "TestDefination.admin_checks_that_Affiliates_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3091463500,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "Clicks the date added field",
+            "match": {
+              "location": "TestDefination.clicks_the_date_added_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3073637200,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "Admin selects the date\"17/10/2021\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"17/10/2021\"",
+                  "offset": 22
+                }
+              ],
+              "location": "TestDefination.admin_selects_the_date(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3873222100,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "Admin clicks the filter button to search the users by date",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_filter_button_to_search_the_users_by_date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3062422200,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "Admin fetch all the result of the users",
+            "match": {
+              "location": "TestDefination.admin_fetch_all_the_result_of_the_users()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter_by_date"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 636600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6153353300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 100157325100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3014095400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5117313600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2884818100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3572100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:29:15.001Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3588501400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 110,
+        "name": "Search a user using date field",
+        "description": "",
+        "id": "affiliate-page;search-a-user-using-date-field;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 5224072900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3031547300,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "Admin checks that Affiliates Page",
+            "match": {
+              "location": "TestDefination.admin_checks_that_Affiliates_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3063693700,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "Clicks the date added field",
+            "match": {
+              "location": "TestDefination.clicks_the_date_added_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3045697300,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "Admin selects the date\"11/10/2021\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"11/10/2021\"",
+                  "offset": 22
+                }
+              ],
+              "location": "TestDefination.admin_selects_the_date(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4578401600,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "Admin clicks the filter button to search the users by date",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_filter_button_to_search_the_users_by_date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: null\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.fail(Assert.java:106)\r\n\tat RetailDefinition.TestDefination.admin_fetch_all_the_result_of_the_users(TestDefination.java:797)\r\n\tat ✽.Admin fetch all the result of the users(file:src/test/java/RetailFeature/Retail.feature:105)\r\n",
+              "duration": 3047812400,
+              "status": "failed"
+            },
+            "line": 105,
+            "name": "Admin fetch all the result of the users",
+            "match": {
+              "location": "TestDefination.admin_fetch_all_the_result_of_the_users()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter_by_date"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 113800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6152873400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4239878400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3019275500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5179187100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2642487200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5126600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:31:37.913Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3574241900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 111,
+        "name": "Search a user using date field",
+        "description": "",
+        "id": "affiliate-page;search-a-user-using-date-field;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 5136995200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3036162000,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "Admin checks that Affiliates Page",
+            "match": {
+              "location": "TestDefination.admin_checks_that_Affiliates_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3082267900,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "Clicks the date added field",
+            "match": {
+              "location": "TestDefination.clicks_the_date_added_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3054703000,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "Admin selects the date\"05/11/2021\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"05/11/2021\"",
+                  "offset": 22
+                }
+              ],
+              "location": "TestDefination.admin_selects_the_date(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3897678900,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "Admin clicks the filter button to search the users by date",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_filter_button_to_search_the_users_by_date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: null\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.fail(Assert.java:106)\r\n\tat RetailDefinition.TestDefination.admin_fetch_all_the_result_of_the_users(TestDefination.java:797)\r\n\tat ✽.Admin fetch all the result of the users(file:src/test/java/RetailFeature/Retail.feature:105)\r\n",
+              "duration": 3039097700,
+              "status": "failed"
+            },
+            "line": 105,
+            "name": "Admin fetch all the result of the users",
+            "match": {
+              "location": "TestDefination.admin_fetch_all_the_result_of_the_users()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter_by_date"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 120800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6140508000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48502357500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3023018500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5163734600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2964803800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8501100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:32:23.975Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3139121900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 119,
+        "name": "Admin approve the user",
+        "description": "",
+        "id": "affiliate-page;admin-approve-the-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5149179000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30778021500,
+              "status": "passed"
+            },
+            "line": 115,
+            "name": "Admin matches the user then approved\"qwerty\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwerty\"",
+                  "offset": 36
+                }
+              ],
+              "location": "TestDefination.admin_matches_the_user_then_approved(String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@approve"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 106800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6145530900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61765404100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3019934900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5119298500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2882876000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4799000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:34:08.845Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3670363900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 120,
+        "name": "Admin approve the user",
+        "description": "",
+        "id": "affiliate-page;admin-approve-the-user;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 5207435100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4854480800,
+              "status": "passed"
+            },
+            "line": 115,
+            "name": "Admin matches the user then approved\"pqr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"pqr\"",
+                  "offset": 36
+                }
+              ],
+              "location": "TestDefination.admin_matches_the_user_then_approved(String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@approve"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 102500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6134073300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4371448000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3023882000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5125881900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 87951364300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4616400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:35:41.517Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2973861900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 121,
+        "name": "Admin approve the user",
+        "description": "",
+        "id": "affiliate-page;admin-approve-the-user;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 5302950600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4551653300,
+              "status": "passed"
+            },
+            "line": 115,
+            "name": "Admin matches the user then approved\"hukomuko\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hukomuko\"",
+                  "offset": 36
+                }
+              ],
+              "location": "TestDefination.admin_matches_the_user_then_approved(String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@approve"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 144200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: null\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.fail(Assert.java:106)\r\n\tat RetailDefinition.TestDefination.user_enter_username_and_password(TestDefination.java:58)\r\n\tat ✽.User enter username and password(file:src/test/java/RetailFeature/Retail.feature:5)\r\n",
+              "duration": 13228400,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12700,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3600,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 900,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 700,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2500,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:37:40.958Z",
+        "before": [
+          {
+            "result": {
+              "duration": 131767609900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 134,
+        "name": "Admin edit the user details",
+        "description": "",
+        "id": "affiliate-page;admin-edit-the-user-details;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5143412000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 900,
+              "status": "skipped"
+            },
+            "line": 125,
+            "name": "Admin clicks the edit button\"Abcd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Abcd\"",
+                  "offset": 28
+                }
+              ],
+              "location": "TestDefination.admin_clicks_the_edit_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 800,
+              "status": "skipped"
+            },
+            "line": 126,
+            "name": "Admin visits the Edit Affiliate page",
+            "match": {
+              "location": "TestDefination.admin_visits_the_Edit_Affiliate_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 700,
+              "status": "skipped"
+            },
+            "line": 127,
+            "name": "Admin changed the firstname\"Tom\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tom\"",
+                  "offset": 27
+                }
+              ],
+              "location": "TestDefination.admin_changed_the_firstname(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 900,
+              "status": "skipped"
+            },
+            "line": 128,
+            "name": "Admin clicks the save button",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 900,
+              "status": "skipped"
+            },
+            "line": 129,
+            "name": "Admin gets the success message",
+            "match": {
+              "location": "TestDefination.admin_gets_the_success_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 900,
+              "status": "skipped"
+            },
+            "line": 130,
+            "name": "Admin checks the two values\"Tom\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tom\"",
+                  "offset": 27
+                }
+              ],
+              "location": "TestDefination.admin_checks_the_two_values(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@edit"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 108600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6143142200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 74467453500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3026522900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5131512300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2900017800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6537300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:39:57.884Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3152410700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 135,
+        "name": "Admin edit the user details",
+        "description": "",
+        "id": "affiliate-page;admin-edit-the-user-details;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 5152236700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7044408300,
+              "status": "passed"
+            },
+            "line": 125,
+            "name": "Admin clicks the edit button\"pqr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"pqr\"",
+                  "offset": 28
+                }
+              ],
+              "location": "TestDefination.admin_clicks_the_edit_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3061812100,
+              "status": "passed"
+            },
+            "line": 126,
+            "name": "Admin visits the Edit Affiliate page",
+            "match": {
+              "location": "TestDefination.admin_visits_the_Edit_Affiliate_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5138949400,
+              "status": "passed"
+            },
+            "line": 127,
+            "name": "Admin changed the firstname\"abc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc\"",
+                  "offset": 27
+                }
+              ],
+              "location": "TestDefination.admin_changed_the_firstname(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4045858300,
+              "status": "passed"
+            },
+            "line": 128,
+            "name": "Admin clicks the save button",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3055113200,
+              "status": "passed"
+            },
+            "line": 129,
+            "name": "Admin gets the success message",
+            "match": {
+              "location": "TestDefination.admin_gets_the_success_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: null\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.fail(Assert.java:106)\r\n\tat RetailDefinition.TestDefination.admin_checks_the_two_values(TestDefination.java:1001)\r\n\tat ✽.Admin checks the two values\"abc\"(file:src/test/java/RetailFeature/Retail.feature:130)\r\n",
+              "duration": 27353884300,
+              "status": "failed"
+            },
+            "line": 130,
+            "name": "Admin checks the two values\"abc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc\"",
+                  "offset": 27
+                }
+              ],
+              "location": "TestDefination.admin_checks_the_two_values(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@edit"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 109400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6135770200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4182972300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3022376000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5162693400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2621111600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3806900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:42:27.565Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3105999300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 138,
+        "name": "Admin cancels the add new user",
+        "description": "",
+        "id": "affiliate-page;admin-cancels-the-add-new-user",
+        "after": [
+          {
+            "result": {
+              "duration": 5119494600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3646109100,
+              "status": "passed"
+            },
+            "line": 139,
+            "name": "Admin clicks the add new button",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_add_new_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3065520500,
+              "status": "passed"
+            },
+            "line": 140,
+            "name": "Admin navigates to the add affiliate page",
+            "match": {
+              "location": "TestDefination.admin_navigates_to_the_add_affiliate_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3648463800,
+              "status": "passed"
+            },
+            "line": 141,
+            "name": "Admin clicks the cancel button",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_cancel_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3038024200,
+              "status": "passed"
+            },
+            "line": 142,
+            "name": "Admin again navigates to the Affiliate List page",
+            "match": {
+              "location": "TestDefination.admin_again_navigates_to_the_Affiliate_List_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cancel"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 106300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6163334700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21821696200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3012590600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5127054500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2913899800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8312800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:43:10.319Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3427526500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 150,
+        "name": "Admin selects the checkbox",
+        "description": "",
+        "id": "affiliate-page;admin-selects-the-checkbox;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5119656600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3068760400,
+              "status": "passed"
+            },
+            "line": 146,
+            "name": "admin wants to select all checkbox or multiple checkboxes\"all\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"all\"",
+                  "offset": 57
+                }
+              ],
+              "location": "TestDefination.admin_wants_to_select_all_checkbox_or_multiple_checkboxes(String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkbox"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 95400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6133211300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 254045791300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3017025800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: null\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.fail(Assert.java:106)\r\n\tat RetailDefinition.TestDefination.user_clicks_the_marketing_option(TestDefination.java:105)\r\n\tat ✽.User clicks the marketing option(file:src/test/java/RetailFeature/Retail.feature:8)\r\n",
+              "duration": 3087894300,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4100,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:44:00.983Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3180962000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 151,
+        "name": "Admin selects the checkbox",
+        "description": "",
+        "id": "affiliate-page;admin-selects-the-checkbox;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 5322920600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 146,
+            "name": "admin wants to select all checkbox or multiple checkboxes\"Apple\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apple\"",
+                  "offset": 57
+                }
+              ],
+              "location": "TestDefination.admin_wants_to_select_all_checkbox_or_multiple_checkboxes(String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkbox"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 91600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6157559500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 188278504100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3014392400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5133101700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2992718700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3243300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:48:35.772Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3259130000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 152,
+        "name": "Admin selects the checkbox",
+        "description": "",
+        "id": "affiliate-page;admin-selects-the-checkbox;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 5176333000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3258653200,
+              "status": "passed"
+            },
+            "line": 146,
+            "name": "admin wants to select all checkbox or multiple checkboxes\"Ramgoru, Hukomuko\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ramgoru, Hukomuko\"",
+                  "offset": 57
+                }
+              ],
+              "location": "TestDefination.admin_wants_to_select_all_checkbox_or_multiple_checkboxes(String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkbox"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 98600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6144402000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 127628752900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3021287800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5128052600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2917788700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3199900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:52:13.047Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5587164300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 153,
+        "name": "Admin selects the checkbox",
+        "description": "",
+        "id": "affiliate-page;admin-selects-the-checkbox;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 5162550500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3149503200,
+              "status": "passed"
+            },
+            "line": 146,
+            "name": "admin wants to select all checkbox or multiple checkboxes\"abcdef\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abcdef\"",
+                  "offset": 57
+                }
+              ],
+              "location": "TestDefination.admin_wants_to_select_all_checkbox_or_multiple_checkboxes(String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkbox"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 179400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "TestDefination.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6144815100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter username and password",
+            "match": {
+              "location": "TestDefination.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4296576100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "TestDefination.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3018312700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the dashboard",
+            "match": {
+              "location": "TestDefination.user_is_on_the_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5115763000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the marketing option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_marketing_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2617551600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the affiliates option",
+            "match": {
+              "location": "TestDefination.user_clicks_the_affiliates_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8764200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is in the affiliates page",
+            "match": {
+              "location": "TestDefination.user_is_in_the_affiliates_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-18T05:54:51.791Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3645636800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.initialization()"
+            }
+          }
+        ],
+        "line": 164,
+        "name": "Admin deletes the user",
+        "description": "",
+        "id": "affiliate-page;admin-deletes-the-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5142007400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksClass.ending()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3139430900,
+              "status": "passed"
+            },
+            "line": 157,
+            "name": "admin wants to select all checkbox or multiple checkboxes\"Abcd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Abcd\"",
+                  "offset": 57
+                }
+              ],
+              "location": "TestDefination.admin_wants_to_select_all_checkbox_or_multiple_checkboxes(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3076723600,
+              "status": "passed"
+            },
+            "line": 158,
+            "name": "Admin clicks the delete button",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_delete_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6037445900,
+              "status": "passed"
+            },
+            "line": 159,
+            "name": "Admin clicks the ok option in the alertbox",
+            "match": {
+              "location": "TestDefination.admin_clicks_the_ok_option_in_the_alertbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3050735900,
+              "status": "passed"
+            },
+            "line": 160,
+            "name": "Admin gets the message",
+            "match": {
+              "location": "TestDefination.admin_gets_the_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@delete"
+          }
+        ]
+      }
+    ],
+    "name": "Affiliate Page",
+    "description": "",
+    "id": "affiliate-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/RetailFeature/Retail.feature",
+    "tags": []
+  }
+]
